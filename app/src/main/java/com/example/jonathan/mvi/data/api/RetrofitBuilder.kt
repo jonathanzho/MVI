@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvi.data.api
+package com.example.jonathan.mvi.data.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory

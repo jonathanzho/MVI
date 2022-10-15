@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvi.data.model
+package com.example.jonathan.mvi.data.model
 
 import com.squareup.moshi.Json
 

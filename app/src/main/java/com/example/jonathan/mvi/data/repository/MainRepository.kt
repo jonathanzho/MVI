@@ -1,6 +1,6 @@
-package com.mindorks.framework.mvi.data.repository
+package com.example.jonathan.mvi.data.repository
 
-import com.mindorks.framework.mvi.data.api.ApiHelper
+import com.example.jonathan.mvi.data.api.ApiHelper
 
 
 class MainRepository(private val apiHelper: ApiHelper) {

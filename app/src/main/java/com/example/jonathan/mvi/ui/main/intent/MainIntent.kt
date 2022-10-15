@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvi.ui.main.intent
+package com.example.jonathan.mvi.ui.main.intent
 
 sealed class MainIntent {
 

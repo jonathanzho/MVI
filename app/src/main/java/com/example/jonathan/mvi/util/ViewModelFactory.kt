@@ -1,10 +1,10 @@
-package com.mindorks.framework.mvi.util
+package com.example.jonathan.mvi.util
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.mindorks.framework.mvi.data.api.ApiHelper
-import com.mindorks.framework.mvi.data.repository.MainRepository
-import com.mindorks.framework.mvi.ui.main.viewmodel.MainViewModel
+import com.example.jonathan.mvi.data.api.ApiHelper
+import com.example.jonathan.mvi.data.repository.MainRepository
+import com.example.jonathan.mvi.ui.main.viewmodel.MainViewModel
 
 class ViewModelFactory(private val apiHelper: ApiHelper) : ViewModelProvider.Factory {
 
