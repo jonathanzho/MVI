@@ -4,8 +4,9 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     signingConfigs {
-        release {
-            storeFile file('/home/jonathan/.android/debug.keystore')
+        // Android Studio's debug build signing config:
+        debug {
+            storeFile "${System.properties['user.home']}/.android/debug.keystore" as File
             storePassword 'android'
             keyAlias 'androiddebugkey'
             keyPassword 'android'
@@ -17,7 +18,7 @@ android {
         sourceCompatibility = "8"
     }
     defaultConfig {
-        applicationId "com.mindorks.framework.mvi"
+        applicationId "com.example.jonathan.mvi"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -31,7 +32,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
